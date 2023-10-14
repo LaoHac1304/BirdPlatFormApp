@@ -1,0 +1,17 @@
+D:\PE_PRN221\BirdPlatFormApp\Application\obj\Debug\net6.0\Application.csproj.AssemblyReference.cache
+D:\PE_PRN221\BirdPlatFormApp\Application\obj\Debug\net6.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\PE_PRN221\BirdPlatFormApp\Application\obj\Debug\net6.0\Application.AssemblyInfoInputs.cache
+D:\PE_PRN221\BirdPlatFormApp\Application\obj\Debug\net6.0\Application.AssemblyInfo.cs
+D:\PE_PRN221\BirdPlatFormApp\Application\obj\Debug\net6.0\Application.csproj.CoreCompileInputs.cache
+D:\PE_PRN221\BirdPlatFormApp\Application\bin\Debug\net6.0\Application.deps.json
+D:\PE_PRN221\BirdPlatFormApp\Application\bin\Debug\net6.0\Application.dll
+D:\PE_PRN221\BirdPlatFormApp\Application\bin\Debug\net6.0\Application.pdb
+D:\PE_PRN221\BirdPlatFormApp\Application\bin\Debug\net6.0\Domain.dll
+D:\PE_PRN221\BirdPlatFormApp\Application\bin\Debug\net6.0\Infrastructure.dll
+D:\PE_PRN221\BirdPlatFormApp\Application\bin\Debug\net6.0\Infrastructure.pdb
+D:\PE_PRN221\BirdPlatFormApp\Application\bin\Debug\net6.0\Domain.pdb
+D:\PE_PRN221\BirdPlatFormApp\Application\obj\Debug\net6.0\Application.csproj.CopyComplete
+D:\PE_PRN221\BirdPlatFormApp\Application\obj\Debug\net6.0\Application.dll
+D:\PE_PRN221\BirdPlatFormApp\Application\obj\Debug\net6.0\refint\Application.dll
+D:\PE_PRN221\BirdPlatFormApp\Application\obj\Debug\net6.0\Application.pdb
+D:\PE_PRN221\BirdPlatFormApp\Application\obj\Debug\net6.0\ref\Application.dll
