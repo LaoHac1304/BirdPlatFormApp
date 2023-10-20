@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Q7kuZm3EGWRs7/vZHkXnaKUWv2oZhmm8wJ8xWQ2lK1t7ql5od3QJERfMIOM4BjlW11gQDlcG3/5Tqb9JsVAVdw==",
+  "dgSpecHash": "ZIiIo3bY6geDTcOfKWWTuR639f9Id79yQjsqcXF32LyOoaf5sCw7UNNBULu4cZGpBgYVRZnLybw+Y6QAZ7Ryqg==",
   "success": true,
-  "projectFilePath": "D:\\PE_PRN221\\BirdPlatFormApp\\Infrastructure\\Infrastructure.csproj",
+  "projectFilePath": "D:\\KI_7\\PRN221\\BirdPlatFormApp\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\simnh\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\simnh\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

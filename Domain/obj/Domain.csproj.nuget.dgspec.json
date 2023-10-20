@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\PE_PRN221\\BirdPlatFormApp\\Domain\\Domain.csproj": {}
+    "D:\\KI_7\\PRN221\\BirdPlatFormApp\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "D:\\PE_PRN221\\BirdPlatFormApp\\Domain\\Domain.csproj": {
+    "D:\\KI_7\\PRN221\\BirdPlatFormApp\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\PE_PRN221\\BirdPlatFormApp\\Domain\\Domain.csproj",
+        "projectUniqueName": "D:\\KI_7\\PRN221\\BirdPlatFormApp\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "D:\\PE_PRN221\\BirdPlatFormApp\\Domain\\Domain.csproj",
+        "projectPath": "D:\\KI_7\\PRN221\\BirdPlatFormApp\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\simnh\\.nuget\\packages\\",
-        "outputPath": "D:\\PE_PRN221\\BirdPlatFormApp\\Domain\\obj\\",
+        "outputPath": "D:\\KI_7\\PRN221\\BirdPlatFormApp\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\simnh\\AppData\\Roaming\\NuGet\\NuGet.Config",

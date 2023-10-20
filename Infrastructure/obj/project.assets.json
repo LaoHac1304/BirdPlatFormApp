@@ -2898,11 +2898,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\PE_PRN221\\BirdPlatFormApp\\Infrastructure\\Infrastructure.csproj",
+      "projectUniqueName": "D:\\KI_7\\PRN221\\BirdPlatFormApp\\Infrastructure\\Infrastructure.csproj",
       "projectName": "Infrastructure",
-      "projectPath": "D:\\PE_PRN221\\BirdPlatFormApp\\Infrastructure\\Infrastructure.csproj",
+      "projectPath": "D:\\KI_7\\PRN221\\BirdPlatFormApp\\Infrastructure\\Infrastructure.csproj",
       "packagesPath": "C:\\Users\\simnh\\.nuget\\packages\\",
-      "outputPath": "D:\\PE_PRN221\\BirdPlatFormApp\\Infrastructure\\obj\\",
+      "outputPath": "D:\\KI_7\\PRN221\\BirdPlatFormApp\\Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\simnh\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2919,8 +2919,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\PE_PRN221\\BirdPlatFormApp\\Domain\\Domain.csproj": {
-              "projectPath": "D:\\PE_PRN221\\BirdPlatFormApp\\Domain\\Domain.csproj"
+            "D:\\KI_7\\PRN221\\BirdPlatFormApp\\Domain\\Domain.csproj": {
+              "projectPath": "D:\\KI_7\\PRN221\\BirdPlatFormApp\\Domain\\Domain.csproj"
             }
           }
         }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\PE_PRN221\\BirdPlatFormApp\\BirdPlatFormApp\\BirdPlatFormApp.csproj": {}
+    "D:\\KI_7\\PRN221\\BirdPlatFormApp\\BirdPlatFormApp\\BirdPlatFormApp.csproj": {}
   },
   "projects": {
-    "D:\\PE_PRN221\\BirdPlatFormApp\\Application\\Application.csproj": {
+    "D:\\KI_7\\PRN221\\BirdPlatFormApp\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\PE_PRN221\\BirdPlatFormApp\\Application\\Application.csproj",
+        "projectUniqueName": "D:\\KI_7\\PRN221\\BirdPlatFormApp\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "D:\\PE_PRN221\\BirdPlatFormApp\\Application\\Application.csproj",
+        "projectPath": "D:\\KI_7\\PRN221\\BirdPlatFormApp\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\simnh\\.nuget\\packages\\",
-        "outputPath": "D:\\PE_PRN221\\BirdPlatFormApp\\Application\\obj\\",
+        "outputPath": "D:\\KI_7\\PRN221\\BirdPlatFormApp\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\simnh\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\PE_PRN221\\BirdPlatFormApp\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "D:\\PE_PRN221\\BirdPlatFormApp\\Infrastructure\\Infrastructure.csproj"
+              "D:\\KI_7\\PRN221\\BirdPlatFormApp\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "D:\\KI_7\\PRN221\\BirdPlatFormApp\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
@@ -63,14 +63,14 @@
         }
       }
     },
-    "D:\\PE_PRN221\\BirdPlatFormApp\\BirdPlatFormApp\\BirdPlatFormApp.csproj": {
+    "D:\\KI_7\\PRN221\\BirdPlatFormApp\\BirdPlatFormApp\\BirdPlatFormApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\PE_PRN221\\BirdPlatFormApp\\BirdPlatFormApp\\BirdPlatFormApp.csproj",
+        "projectUniqueName": "D:\\KI_7\\PRN221\\BirdPlatFormApp\\BirdPlatFormApp\\BirdPlatFormApp.csproj",
         "projectName": "BirdPlatFormApp",
-        "projectPath": "D:\\PE_PRN221\\BirdPlatFormApp\\BirdPlatFormApp\\BirdPlatFormApp.csproj",
+        "projectPath": "D:\\KI_7\\PRN221\\BirdPlatFormApp\\BirdPlatFormApp\\BirdPlatFormApp.csproj",
         "packagesPath": "C:\\Users\\simnh\\.nuget\\packages\\",
-        "outputPath": "D:\\PE_PRN221\\BirdPlatFormApp\\BirdPlatFormApp\\obj\\",
+        "outputPath": "D:\\KI_7\\PRN221\\BirdPlatFormApp\\BirdPlatFormApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\simnh\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -87,11 +87,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\PE_PRN221\\BirdPlatFormApp\\Application\\Application.csproj": {
-                "projectPath": "D:\\PE_PRN221\\BirdPlatFormApp\\Application\\Application.csproj"
+              "D:\\KI_7\\PRN221\\BirdPlatFormApp\\Application\\Application.csproj": {
+                "projectPath": "D:\\KI_7\\PRN221\\BirdPlatFormApp\\Application\\Application.csproj"
               },
-              "D:\\PE_PRN221\\BirdPlatFormApp\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "D:\\PE_PRN221\\BirdPlatFormApp\\Infrastructure\\Infrastructure.csproj"
+              "D:\\KI_7\\PRN221\\BirdPlatFormApp\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "D:\\KI_7\\PRN221\\BirdPlatFormApp\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
@@ -148,14 +148,14 @@
         }
       }
     },
-    "D:\\PE_PRN221\\BirdPlatFormApp\\Domain\\Domain.csproj": {
+    "D:\\KI_7\\PRN221\\BirdPlatFormApp\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\PE_PRN221\\BirdPlatFormApp\\Domain\\Domain.csproj",
+        "projectUniqueName": "D:\\KI_7\\PRN221\\BirdPlatFormApp\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "D:\\PE_PRN221\\BirdPlatFormApp\\Domain\\Domain.csproj",
+        "projectPath": "D:\\KI_7\\PRN221\\BirdPlatFormApp\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\simnh\\.nuget\\packages\\",
-        "outputPath": "D:\\PE_PRN221\\BirdPlatFormApp\\Domain\\obj\\",
+        "outputPath": "D:\\KI_7\\PRN221\\BirdPlatFormApp\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\simnh\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -229,14 +229,14 @@
         }
       }
     },
-    "D:\\PE_PRN221\\BirdPlatFormApp\\Infrastructure\\Infrastructure.csproj": {
+    "D:\\KI_7\\PRN221\\BirdPlatFormApp\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\PE_PRN221\\BirdPlatFormApp\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "D:\\KI_7\\PRN221\\BirdPlatFormApp\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "D:\\PE_PRN221\\BirdPlatFormApp\\Infrastructure\\Infrastructure.csproj",
+        "projectPath": "D:\\KI_7\\PRN221\\BirdPlatFormApp\\Infrastructure\\Infrastructure.csproj",
         "packagesPath": "C:\\Users\\simnh\\.nuget\\packages\\",
-        "outputPath": "D:\\PE_PRN221\\BirdPlatFormApp\\Infrastructure\\obj\\",
+        "outputPath": "D:\\KI_7\\PRN221\\BirdPlatFormApp\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\simnh\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -253,8 +253,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\PE_PRN221\\BirdPlatFormApp\\Domain\\Domain.csproj": {
-                "projectPath": "D:\\PE_PRN221\\BirdPlatFormApp\\Domain\\Domain.csproj"
+              "D:\\KI_7\\PRN221\\BirdPlatFormApp\\Domain\\Domain.csproj": {
+                "projectPath": "D:\\KI_7\\PRN221\\BirdPlatFormApp\\Domain\\Domain.csproj"
               }
             }
           }
