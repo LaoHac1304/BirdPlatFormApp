@@ -7,55 +7,54 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using Domain.Entities;
 using Infrastructure;
-using Infrastructure.InterfaceRepositories;
 
-namespace BirdPlatFormApp.Pages.CustomerPages
+namespace BirdPlatFormApp.Pages.ProviderPages
 {
     public class DeleteModel : PageModel
     {
-        private readonly ICustomerRepository _context;
+        private readonly Infrastructure.BirdPlatformContext _context;
 
-        public DeleteModel(ICustomerRepository context)
+        public DeleteModel(Infrastructure.BirdPlatformContext context)
         {
             _context = context;
         }
 
-      [BindProperty]
-      public Customer Customer { get; set; } = default!;
+        [BindProperty]
+      public Provider Provider { get; set; } = default!;
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
-            if (id == null || _context == null)
+            if (id == null || _context.Providers == null)
             {
                 return NotFound();
             }
 
-            var customer = await _context.GetAll().FirstOrDefaultAsync(m => m.Id == id);
+            var provider = await _context.Providers.FirstOrDefaultAsync(m => m.Id == id);
 
-            if (customer == null)
+            if (provider == null)
             {
                 return NotFound();
             }
             else 
             {
-                Customer = customer;
+                Provider = provider;
             }
             return Page();
         }
 
         public async Task<IActionResult> OnPostAsync(int? id)
         {
-            if (id == null || _context == null)
+            if (id == null || _context.Providers == null)
             {
                 return NotFound();
             }
-            var customer = await _context.GetAll()
-                .SingleOrDefaultAsync(x => x.Id.Equals(id));
+            var provider = await _context.Providers.FindAsync(id);
 
-            if (customer != null)
+            if (provider != null)
             {
-                Customer = customer;
-                await _context.DeleteAsync(Customer);
+                Provider = provider;
+                _context.Providers.Remove(Provider);
+                await _context.SaveChangesAsync();
             }
 
             return RedirectToPage("./Index");

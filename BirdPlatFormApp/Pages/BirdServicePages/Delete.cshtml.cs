@@ -7,55 +7,54 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using Domain.Entities;
 using Infrastructure;
-using Infrastructure.InterfaceRepositories;
 
-namespace BirdPlatFormApp.Pages.CustomerPages
+namespace BirdPlatFormApp.Pages.BirdServicePages
 {
     public class DeleteModel : PageModel
     {
-        private readonly ICustomerRepository _context;
+        private readonly Infrastructure.BirdPlatformContext _context;
 
-        public DeleteModel(ICustomerRepository context)
+        public DeleteModel(Infrastructure.BirdPlatformContext context)
         {
             _context = context;
         }
 
-      [BindProperty]
-      public Customer Customer { get; set; } = default!;
+        [BindProperty]
+      public BirdService BirdService { get; set; } = default!;
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
-            if (id == null || _context == null)
+            if (id == null || _context.BirdServices == null)
             {
                 return NotFound();
             }
 
-            var customer = await _context.GetAll().FirstOrDefaultAsync(m => m.Id == id);
+            var birdservice = await _context.BirdServices.FirstOrDefaultAsync(m => m.Id == id);
 
-            if (customer == null)
+            if (birdservice == null)
             {
                 return NotFound();
             }
             else 
             {
-                Customer = customer;
+                BirdService = birdservice;
             }
             return Page();
         }
 
         public async Task<IActionResult> OnPostAsync(int? id)
         {
-            if (id == null || _context == null)
+            if (id == null || _context.BirdServices == null)
             {
                 return NotFound();
             }
-            var customer = await _context.GetAll()
-                .SingleOrDefaultAsync(x => x.Id.Equals(id));
+            var birdservice = await _context.BirdServices.FindAsync(id);
 
-            if (customer != null)
+            if (birdservice != null)
             {
-                Customer = customer;
-                await _context.DeleteAsync(Customer);
+                BirdService = birdservice;
+                _context.BirdServices.Remove(BirdService);
+                await _context.SaveChangesAsync();
             }
 
             return RedirectToPage("./Index");

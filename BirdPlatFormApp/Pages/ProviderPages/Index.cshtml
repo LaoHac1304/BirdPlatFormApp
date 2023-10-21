@@ -1,5 +1,5 @@
 ﻿@page
-@model BirdPlatFormApp.Pages.CustomerPages.IndexModel
+@model BirdPlatFormApp.Pages.ProviderPages.IndexModel
 
 @{
     ViewData["Title"] = "Index";
@@ -14,29 +14,38 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Customer[0].Address)
+                @Html.DisplayNameFor(model => model.Provider[0].ProviderName)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Customer[0].PhoneNumber)
+                @Html.DisplayNameFor(model => model.Provider[0].Password)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Customer[0].Birthday)
+                @Html.DisplayNameFor(model => model.Provider[0].Address)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Customer[0].RoleId)
+                @Html.DisplayNameFor(model => model.Provider[0].PhoneNumber)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Customer[0].IsActive)
+                @Html.DisplayNameFor(model => model.Provider[0].Birthday)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Customer[0].Email)
+                @Html.DisplayNameFor(model => model.Provider[0].RoleId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Provider[0].IsActive)
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model.Customer) {
+@foreach (var item in Model.Provider) {
         <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProviderName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Password)
+            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Address)
             </td>
@@ -51,9 +60,6 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.IsActive)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Email)
             </td>
             <td>
                 <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
