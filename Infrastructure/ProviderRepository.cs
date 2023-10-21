@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Infrastructure.InterfaceRepositories
 {
-    public class ProviderRepository : RepositoryBase<ProviderRepository>, IProviderRepository
+    public class ProviderRepository : RepositoryBase<Provider>, IProviderRepository
     {
         public async Task<Provider?> GetProviderById(int id)
         {

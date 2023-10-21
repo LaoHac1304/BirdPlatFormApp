@@ -7,26 +7,25 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using Domain.Entities;
 using Infrastructure;
-using Infrastructure.InterfaceRepositories;
 
-namespace BirdPlatFormApp.Pages.CustomerPages
+namespace BirdPlatFormApp.Pages.ProviderPages
 {
     public class IndexModel : PageModel
     {
-        private readonly ICustomerRepository _context;
+        private readonly Infrastructure.BirdPlatformContext _context;
 
-        public IndexModel(ICustomerRepository context)
+        public IndexModel(Infrastructure.BirdPlatformContext context)
         {
             _context = context;
         }
 
-        public IList<Customer> Customer { get;set; } = default!;
+        public IList<Provider> Provider { get;set; } = default!;
 
         public async Task OnGetAsync()
         {
-            if (_context != null)
+            if (_context.Providers != null)
             {
-                Customer = await _context.GetAll().ToListAsync();
+                Provider = await _context.Providers.ToListAsync();
             }
         }
     }

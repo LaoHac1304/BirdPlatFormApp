@@ -1,5 +1,4 @@
-﻿using Application;
-using Infrastructure;
+﻿using Infrastructure;
 
 namespace BirdPlatFormApp
 {
@@ -16,7 +15,6 @@ namespace BirdPlatFormApp
         {
             services.AddRazorPages();
             services.RegisterApp(Configuration)
-                    .RegisterApplication(Configuration)
                     .RegisterInfrastructure(Configuration)
                     .RegisterRepository();
 
@@ -27,7 +25,7 @@ namespace BirdPlatFormApp
             services.AddHttpContextAccessor();
             services.AddSession(option =>
             {
-                option.IdleTimeout = TimeSpan.FromMinutes(20);
+                option.IdleTimeout = TimeSpan.FromMinutes(45);
             });
         }
 

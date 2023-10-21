@@ -7,36 +7,35 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using Domain.Entities;
 using Infrastructure;
-using Infrastructure.InterfaceRepositories;
 
-namespace BirdPlatFormApp.Pages.CustomerPages
+namespace BirdPlatFormApp.Pages.BirdServicePages
 {
     public class DetailsModel : PageModel
     {
-        private readonly ICustomerRepository _context;
+        private readonly Infrastructure.BirdPlatformContext _context;
 
-        public DetailsModel(ICustomerRepository context)
+        public DetailsModel(Infrastructure.BirdPlatformContext context)
         {
             _context = context;
         }
 
-      public Customer Customer { get; set; } = default!; 
+      public BirdService BirdService { get; set; } = default!; 
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
-            if (id == null || _context == null)
+            if (id == null || _context.BirdServices == null)
             {
                 return NotFound();
             }
 
-            var customer = await _context.GetAll().FirstOrDefaultAsync(m => m.Id == id);
-            if (customer == null)
+            var birdservice = await _context.BirdServices.FirstOrDefaultAsync(m => m.Id == id);
+            if (birdservice == null)
             {
                 return NotFound();
             }
             else 
             {
-                Customer = customer;
+                BirdService = birdservice;
             }
             return Page();
         }
