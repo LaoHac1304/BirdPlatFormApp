@@ -9,5 +9,9 @@ namespace Infrastructure.InterfaceRepositories
 {
     public interface IBirdServiceRepository : IRepositoryBase<BirdService>
     {
+        public Task<IEnumerable<BirdService>?> GetBirdServicesByName(string name);
+        public Task<IEnumerable<BirdService>?> GetBirdServicesByProviderName(string name);
+        public Task<BirdService> GetBirdServiceById(int id);
+
     }
 }

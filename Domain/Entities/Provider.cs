@@ -18,7 +18,6 @@ namespace Domain.Entities
         public DateTime? Birthday { get; set; }
         public int RoleId { get; set; }
         public int IsActive { get; set; }
-
         public virtual ICollection<BirdService> BirdServices { get; set; }
     }
 }

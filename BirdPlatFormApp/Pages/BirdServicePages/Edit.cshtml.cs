@@ -8,37 +8,35 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Domain.Entities;
 using Infrastructure;
-using Infrastructure.InterfaceRepositories;
 
-namespace BirdPlatFormApp.Pages.CustomerPages
+namespace BirdPlatFormApp.Pages.BirdServicePages
 {
     public class EditModel : PageModel
     {
-        private readonly ICustomerRepository _context;
+        private readonly Infrastructure.BirdPlatformContext _context;
 
-        public EditModel(ICustomerRepository context)
+        public EditModel(Infrastructure.BirdPlatformContext context)
         {
             _context = context;
         }
 
         [BindProperty]
-        public Customer Customer { get; set; } = default!;
+        public BirdService BirdService { get; set; } = default!;
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
-            if (id == null || _context == null)
+            if (id == null || _context.BirdServices == null)
             {
                 return NotFound();
             }
 
-            var customer =  await _context
-                .GetAll()
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (customer == null)
+            var birdservice =  await _context.BirdServices.FirstOrDefaultAsync(m => m.Id == id);
+            if (birdservice == null)
             {
                 return NotFound();
             }
-            Customer = customer;
+            BirdService = birdservice;
+           ViewData["ProviderId"] = new SelectList(_context.Providers, "Id", "Password");
             return Page();
         }
 
@@ -46,20 +44,20 @@ namespace BirdPlatFormApp.Pages.CustomerPages
         // For more details, see https://aka.ms/RazorPagesCRUD.
         public async Task<IActionResult> OnPostAsync()
         {
-            /*if (!ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
                 return Page();
-            }*/
+            }
 
-            //_context.Attach(Customer).State = EntityState.Modified;
+            _context.Attach(BirdService).State = EntityState.Modified;
 
             try
             {
-                await _context.UpdateAsync(Customer);
+                await _context.SaveChangesAsync();
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!CustomerExists(Customer.Id))
+                if (!BirdServiceExists(BirdService.Id))
                 {
                     return NotFound();
                 }
@@ -72,9 +70,9 @@ namespace BirdPlatFormApp.Pages.CustomerPages
             return RedirectToPage("./Index");
         }
 
-        private bool CustomerExists(int id)
+        private bool BirdServiceExists(int id)
         {
-          return (_context.GetAll()?.Any(e => e.Id == id)).GetValueOrDefault();
+          return (_context.BirdServices?.Any(e => e.Id == id)).GetValueOrDefault();
         }
     }
 }
