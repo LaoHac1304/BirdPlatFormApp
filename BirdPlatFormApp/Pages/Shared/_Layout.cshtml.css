@@ -46,3 +46,27 @@ button.accept-policy {
   white-space: nowrap;
   line-height: 60px;
 }
+
+#body-content{
+    height: 100vh;
+    width: 100vw
+}
+main{
+    width: 100%;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.list-group-item{
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    left: -100px;
+}
+

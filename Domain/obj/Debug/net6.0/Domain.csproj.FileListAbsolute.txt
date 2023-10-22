@@ -12,3 +12,17 @@ D:\PE_PRN221\BirdPlatFormApp\Domain\obj\Debug\net6.0\ref\Domain.dll
 D:\PE_PRN221\BirdPlatFormApp\Domain\bin\Debug\net6.0\Domain.runtimeconfig.json
 D:\PE_PRN221\BirdPlatFormApp\Domain\obj\Debug\net6.0\Domain.csproj.AssemblyReference.cache
 D:\PE_PRN221\BirdPlatFormApp\Domain\obj\Debug\net6.0\Domain.genruntimeconfig.cache
+F:\Fall2023\prn221\handon\BirdPlatFormApp\Domain\bin\Debug\net6.0\Domain.deps.json
+F:\Fall2023\prn221\handon\BirdPlatFormApp\Domain\bin\Debug\net6.0\Domain.runtimeconfig.json
+F:\Fall2023\prn221\handon\BirdPlatFormApp\Domain\bin\Debug\net6.0\Domain.dll
+F:\Fall2023\prn221\handon\BirdPlatFormApp\Domain\bin\Debug\net6.0\Domain.pdb
+F:\Fall2023\prn221\handon\BirdPlatFormApp\Domain\obj\Debug\net6.0\Domain.csproj.AssemblyReference.cache
+F:\Fall2023\prn221\handon\BirdPlatFormApp\Domain\obj\Debug\net6.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+F:\Fall2023\prn221\handon\BirdPlatFormApp\Domain\obj\Debug\net6.0\Domain.AssemblyInfoInputs.cache
+F:\Fall2023\prn221\handon\BirdPlatFormApp\Domain\obj\Debug\net6.0\Domain.AssemblyInfo.cs
+F:\Fall2023\prn221\handon\BirdPlatFormApp\Domain\obj\Debug\net6.0\Domain.csproj.CoreCompileInputs.cache
+F:\Fall2023\prn221\handon\BirdPlatFormApp\Domain\obj\Debug\net6.0\Domain.dll
+F:\Fall2023\prn221\handon\BirdPlatFormApp\Domain\obj\Debug\net6.0\refint\Domain.dll
+F:\Fall2023\prn221\handon\BirdPlatFormApp\Domain\obj\Debug\net6.0\Domain.pdb
+F:\Fall2023\prn221\handon\BirdPlatFormApp\Domain\obj\Debug\net6.0\Domain.genruntimeconfig.cache
+F:\Fall2023\prn221\handon\BirdPlatFormApp\Domain\obj\Debug\net6.0\ref\Domain.dll

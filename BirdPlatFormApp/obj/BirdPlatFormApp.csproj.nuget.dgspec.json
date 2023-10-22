@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\PE_PRN221\\BirdPlatFormApp\\BirdPlatFormApp\\BirdPlatFormApp.csproj": {}
+    "F:\\Fall2023\\prn221\\handon\\BirdPlatFormApp\\BirdPlatFormApp\\BirdPlatFormApp.csproj": {}
   },
   "projects": {
-    "D:\\PE_PRN221\\BirdPlatFormApp\\Application\\Application.csproj": {
+    "F:\\Fall2023\\prn221\\handon\\BirdPlatFormApp\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\PE_PRN221\\BirdPlatFormApp\\Application\\Application.csproj",
+        "projectUniqueName": "F:\\Fall2023\\prn221\\handon\\BirdPlatFormApp\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "D:\\PE_PRN221\\BirdPlatFormApp\\Application\\Application.csproj",
-        "packagesPath": "C:\\Users\\simnh\\.nuget\\packages\\",
-        "outputPath": "D:\\PE_PRN221\\BirdPlatFormApp\\Application\\obj\\",
+        "projectPath": "F:\\Fall2023\\prn221\\handon\\BirdPlatFormApp\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\huyqn\\.nuget\\packages\\",
+        "outputPath": "F:\\Fall2023\\prn221\\handon\\BirdPlatFormApp\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\simnh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\huyqn\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\PE_PRN221\\BirdPlatFormApp\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "D:\\PE_PRN221\\BirdPlatFormApp\\Infrastructure\\Infrastructure.csproj"
+              "F:\\Fall2023\\prn221\\handon\\BirdPlatFormApp\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "F:\\Fall2023\\prn221\\handon\\BirdPlatFormApp\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
@@ -43,6 +43,36 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Google.Apis.Auth": {
+              "target": "Package",
+              "version": "[1.62.1, )"
+            },
+            "Google.Apis.Oauth2.v2": {
+              "target": "Package",
+              "version": "[1.62.0.1869, )"
+            },
+            "Microsoft.AspNetCore.Authentication": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.Google": {
+              "target": "Package",
+              "version": "[6.0.23, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -63,17 +93,17 @@
         }
       }
     },
-    "D:\\PE_PRN221\\BirdPlatFormApp\\BirdPlatFormApp\\BirdPlatFormApp.csproj": {
+    "F:\\Fall2023\\prn221\\handon\\BirdPlatFormApp\\BirdPlatFormApp\\BirdPlatFormApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\PE_PRN221\\BirdPlatFormApp\\BirdPlatFormApp\\BirdPlatFormApp.csproj",
+        "projectUniqueName": "F:\\Fall2023\\prn221\\handon\\BirdPlatFormApp\\BirdPlatFormApp\\BirdPlatFormApp.csproj",
         "projectName": "BirdPlatFormApp",
-        "projectPath": "D:\\PE_PRN221\\BirdPlatFormApp\\BirdPlatFormApp\\BirdPlatFormApp.csproj",
-        "packagesPath": "C:\\Users\\simnh\\.nuget\\packages\\",
-        "outputPath": "D:\\PE_PRN221\\BirdPlatFormApp\\BirdPlatFormApp\\obj\\",
+        "projectPath": "F:\\Fall2023\\prn221\\handon\\BirdPlatFormApp\\BirdPlatFormApp\\BirdPlatFormApp.csproj",
+        "packagesPath": "C:\\Users\\huyqn\\.nuget\\packages\\",
+        "outputPath": "F:\\Fall2023\\prn221\\handon\\BirdPlatFormApp\\BirdPlatFormApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\simnh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\huyqn\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -87,11 +117,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\PE_PRN221\\BirdPlatFormApp\\Application\\Application.csproj": {
-                "projectPath": "D:\\PE_PRN221\\BirdPlatFormApp\\Application\\Application.csproj"
+              "F:\\Fall2023\\prn221\\handon\\BirdPlatFormApp\\Application\\Application.csproj": {
+                "projectPath": "F:\\Fall2023\\prn221\\handon\\BirdPlatFormApp\\Application\\Application.csproj"
               },
-              "D:\\PE_PRN221\\BirdPlatFormApp\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "D:\\PE_PRN221\\BirdPlatFormApp\\Infrastructure\\Infrastructure.csproj"
+              "F:\\Fall2023\\prn221\\handon\\BirdPlatFormApp\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "F:\\Fall2023\\prn221\\handon\\BirdPlatFormApp\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
@@ -148,17 +178,17 @@
         }
       }
     },
-    "D:\\PE_PRN221\\BirdPlatFormApp\\Domain\\Domain.csproj": {
+    "F:\\Fall2023\\prn221\\handon\\BirdPlatFormApp\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\PE_PRN221\\BirdPlatFormApp\\Domain\\Domain.csproj",
+        "projectUniqueName": "F:\\Fall2023\\prn221\\handon\\BirdPlatFormApp\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "D:\\PE_PRN221\\BirdPlatFormApp\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\simnh\\.nuget\\packages\\",
-        "outputPath": "D:\\PE_PRN221\\BirdPlatFormApp\\Domain\\obj\\",
+        "projectPath": "F:\\Fall2023\\prn221\\handon\\BirdPlatFormApp\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\huyqn\\.nuget\\packages\\",
+        "outputPath": "F:\\Fall2023\\prn221\\handon\\BirdPlatFormApp\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\simnh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\huyqn\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -229,17 +259,17 @@
         }
       }
     },
-    "D:\\PE_PRN221\\BirdPlatFormApp\\Infrastructure\\Infrastructure.csproj": {
+    "F:\\Fall2023\\prn221\\handon\\BirdPlatFormApp\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\PE_PRN221\\BirdPlatFormApp\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "F:\\Fall2023\\prn221\\handon\\BirdPlatFormApp\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "D:\\PE_PRN221\\BirdPlatFormApp\\Infrastructure\\Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\simnh\\.nuget\\packages\\",
-        "outputPath": "D:\\PE_PRN221\\BirdPlatFormApp\\Infrastructure\\obj\\",
+        "projectPath": "F:\\Fall2023\\prn221\\handon\\BirdPlatFormApp\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\huyqn\\.nuget\\packages\\",
+        "outputPath": "F:\\Fall2023\\prn221\\handon\\BirdPlatFormApp\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\simnh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\huyqn\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -253,8 +283,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\PE_PRN221\\BirdPlatFormApp\\Domain\\Domain.csproj": {
-                "projectPath": "D:\\PE_PRN221\\BirdPlatFormApp\\Domain\\Domain.csproj"
+              "F:\\Fall2023\\prn221\\handon\\BirdPlatFormApp\\Domain\\Domain.csproj": {
+                "projectPath": "F:\\Fall2023\\prn221\\handon\\BirdPlatFormApp\\Domain\\Domain.csproj"
               }
             }
           }
@@ -269,6 +299,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Http.Extensions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
               "version": "[6.0.0, )"

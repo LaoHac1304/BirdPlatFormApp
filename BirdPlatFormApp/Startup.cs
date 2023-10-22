@@ -1,5 +1,9 @@
 ﻿using Application;
 using Infrastructure;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication.Google;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Rewrite;
 
 namespace BirdPlatFormApp
 {
@@ -21,13 +25,19 @@ namespace BirdPlatFormApp
                     .RegisterRepository();
 
             services.AddMvc().AddRazorPagesOptions(
-                options => options.Conventions.AddPageRoute("/Login", "")
+                options =>
+                {
+                }
+            );
 
-                );
-            services.AddHttpContextAccessor();
+            services.AddHttpContextAccessor().AddAuthentication();
             services.AddSession(option =>
             {
                 option.IdleTimeout = TimeSpan.FromMinutes(20);
+            });
+            services.Configure<MvcOptions>(options =>
+            {
+                options.Filters.Add(new RequireHttpsAttribute());
             });
         }
 
@@ -45,7 +55,6 @@ namespace BirdPlatFormApp
             app.UseStaticFiles();
 
             app.UseRouting();
-
             app.UseAuthorization();
             app.UseSession();
             app.UseEndpoints(endpoints =>
@@ -53,6 +62,7 @@ namespace BirdPlatFormApp
                 endpoints.MapRazorPages();
             });
 
+            app.UseRewriter(new RewriteOptions().AddRedirectToHttps());
         }
     }
 }
