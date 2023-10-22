@@ -7,29 +7,30 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using Domain.Entities;
 using Infrastructure;
+using Infrastructure.InterfaceRepositories;
 
 namespace BirdPlatFormApp.Pages.CustomerPages
 {
     public class DeleteModel : PageModel
     {
-        private readonly Infrastructure.BirdPlatformContext _context;
+        private readonly ICustomerRepository _context;
 
-        public DeleteModel(Infrastructure.BirdPlatformContext context)
+        public DeleteModel(ICustomerRepository context)
         {
             _context = context;
         }
 
-        [BindProperty]
+      [BindProperty]
       public Customer Customer { get; set; } = default!;
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
-            if (id == null || _context.Customers == null)
+            if (id == null || _context == null)
             {
                 return NotFound();
             }
 
-            var customer = await _context.Customers.FirstOrDefaultAsync(m => m.Id == id);
+            var customer = await _context.GetAll().FirstOrDefaultAsync(m => m.Id == id);
 
             if (customer == null)
             {
@@ -44,17 +45,17 @@ namespace BirdPlatFormApp.Pages.CustomerPages
 
         public async Task<IActionResult> OnPostAsync(int? id)
         {
-            if (id == null || _context.Customers == null)
+            if (id == null || _context == null)
             {
                 return NotFound();
             }
-            var customer = await _context.Customers.FindAsync(id);
+            var customer = await _context.GetAll()
+                .SingleOrDefaultAsync(x => x.Id.Equals(id));
 
             if (customer != null)
             {
                 Customer = customer;
-                _context.Customers.Remove(Customer);
-                await _context.SaveChangesAsync();
+                await _context.DeleteAsync(Customer);
             }
 
             return RedirectToPage("./Index");

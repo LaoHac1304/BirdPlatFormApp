@@ -16,6 +16,26 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = F:\Fall2023\prn221\handon\BirdPlatFormApp\BirdPlatFormApp
 build_property._RazorSourceGeneratorDebug = 
 
+[F:/Fall2023/prn221/handon/BirdPlatFormApp/BirdPlatFormApp/Pages/BirdServicePages/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmlyZFNlcnZpY2VQYWdlc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Fall2023/prn221/handon/BirdPlatFormApp/BirdPlatFormApp/Pages/BirdServicePages/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmlyZFNlcnZpY2VQYWdlc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Fall2023/prn221/handon/BirdPlatFormApp/BirdPlatFormApp/Pages/BirdServicePages/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmlyZFNlcnZpY2VQYWdlc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Fall2023/prn221/handon/BirdPlatFormApp/BirdPlatFormApp/Pages/BirdServicePages/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmlyZFNlcnZpY2VQYWdlc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Fall2023/prn221/handon/BirdPlatFormApp/BirdPlatFormApp/Pages/BirdServicePages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmlyZFNlcnZpY2VQYWdlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [F:/Fall2023/prn221/handon/BirdPlatFormApp/BirdPlatFormApp/Pages/CustomerPages/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3VzdG9tZXJQYWdlc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -50,6 +70,26 @@ build_metadata.AdditionalFiles.CssScope =
 
 [F:/Fall2023/prn221/handon/BirdPlatFormApp/BirdPlatFormApp/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Fall2023/prn221/handon/BirdPlatFormApp/BirdPlatFormApp/Pages/ProviderPages/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvdmlkZXJQYWdlc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Fall2023/prn221/handon/BirdPlatFormApp/BirdPlatFormApp/Pages/ProviderPages/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvdmlkZXJQYWdlc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Fall2023/prn221/handon/BirdPlatFormApp/BirdPlatFormApp/Pages/ProviderPages/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvdmlkZXJQYWdlc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Fall2023/prn221/handon/BirdPlatFormApp/BirdPlatFormApp/Pages/ProviderPages/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvdmlkZXJQYWdlc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Fall2023/prn221/handon/BirdPlatFormApp/BirdPlatFormApp/Pages/ProviderPages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvdmlkZXJQYWdlc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [F:/Fall2023/prn221/handon/BirdPlatFormApp/BirdPlatFormApp/Pages/Shared/_ValidationScriptsPartial.cshtml]

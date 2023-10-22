@@ -92,9 +92,13 @@ namespace Infrastructure
 
                 entity.Property(e => e.IsActive).HasColumnName("isActive");
 
-                entity.Property(e => e.Password)
+                /*entity.Property(e => e.Password)
                     .HasMaxLength(255)
-                    .HasColumnName("password");
+                    .HasColumnName("password");*/
+
+                entity.Property(e => e.Email)
+                .HasMaxLength(50)
+                .HasColumnName("email");
 
                 entity.Property(e => e.PhoneNumber)
                     .HasMaxLength(255)
@@ -102,9 +106,13 @@ namespace Infrastructure
 
                 entity.Property(e => e.RoleId).HasColumnName("roleId");
 
-                entity.Property(e => e.UserName)
+                entity.Property(e => e.Username)
                     .HasMaxLength(255)
                     .HasColumnName("userName");
+
+                entity.Property(e => e.AvatarUrl)
+                    .HasMaxLength(255)
+                    .HasColumnName("avatar_url");
             });
 
             modelBuilder.Entity<Order>(entity =>

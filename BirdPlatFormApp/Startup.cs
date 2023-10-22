@@ -33,7 +33,7 @@ namespace BirdPlatFormApp
             services.AddHttpContextAccessor().AddAuthentication();
             services.AddSession(option =>
             {
-                option.IdleTimeout = TimeSpan.FromMinutes(20);
+                option.IdleTimeout = TimeSpan.FromMinutes(45);
             });
             services.Configure<MvcOptions>(options =>
             {

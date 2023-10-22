@@ -10,8 +10,8 @@ namespace Infrastructure
 {
     public class RepositoryBase<T> : IRepositoryBase<T> where T : class
     {
-        private readonly BirdPlatformContext _context;
-        private readonly DbSet<T> _dbSet;
+        protected readonly BirdPlatformContext _context;
+        protected readonly DbSet<T> _dbSet;
 
         public RepositoryBase()
         {

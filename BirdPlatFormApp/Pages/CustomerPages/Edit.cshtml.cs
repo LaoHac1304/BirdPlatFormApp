@@ -8,14 +8,15 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Domain.Entities;
 using Infrastructure;
+using Infrastructure.InterfaceRepositories;
 
 namespace BirdPlatFormApp.Pages.CustomerPages
 {
     public class EditModel : PageModel
     {
-        private readonly Infrastructure.BirdPlatformContext _context;
+        private readonly ICustomerRepository _context;
 
-        public EditModel(Infrastructure.BirdPlatformContext context)
+        public EditModel(ICustomerRepository context)
         {
             _context = context;
         }
@@ -25,12 +26,14 @@ namespace BirdPlatFormApp.Pages.CustomerPages
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
-            if (id == null || _context.Customers == null)
+            if (id == null || _context == null)
             {
                 return NotFound();
             }
 
-            var customer =  await _context.Customers.FirstOrDefaultAsync(m => m.Id == id);
+            var customer =  await _context
+                .GetAll()
+                .FirstOrDefaultAsync(m => m.Id == id);
             if (customer == null)
             {
                 return NotFound();
@@ -43,16 +46,16 @@ namespace BirdPlatFormApp.Pages.CustomerPages
         // For more details, see https://aka.ms/RazorPagesCRUD.
         public async Task<IActionResult> OnPostAsync()
         {
-            if (!ModelState.IsValid)
+            /*if (!ModelState.IsValid)
             {
                 return Page();
-            }
+            }*/
 
-            _context.Attach(Customer).State = EntityState.Modified;
+            //_context.Attach(Customer).State = EntityState.Modified;
 
             try
             {
-                await _context.SaveChangesAsync();
+                await _context.UpdateAsync(Customer);
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -71,7 +74,7 @@ namespace BirdPlatFormApp.Pages.CustomerPages
 
         private bool CustomerExists(int id)
         {
-          return (_context.Customers?.Any(e => e.Id == id)).GetValueOrDefault();
+          return (_context.GetAll()?.Any(e => e.Id == id)).GetValueOrDefault();
         }
     }
 }

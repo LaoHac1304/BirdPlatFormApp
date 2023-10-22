@@ -7,14 +7,15 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Domain.Entities;
 using Infrastructure;
+using Infrastructure.InterfaceRepositories;
 
 namespace BirdPlatFormApp.Pages.CustomerPages
 {
     public class CreateModel : PageModel
     {
-        private readonly Infrastructure.BirdPlatformContext _context;
+        private readonly ICustomerRepository _context;
 
-        public CreateModel(Infrastructure.BirdPlatformContext context)
+        public CreateModel(ICustomerRepository context)
         {
             _context = context;
         }
@@ -31,13 +32,12 @@ namespace BirdPlatFormApp.Pages.CustomerPages
         // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
         public async Task<IActionResult> OnPostAsync()
         {
-          if (!ModelState.IsValid || _context.Customers == null || Customer == null)
+          if (!ModelState.IsValid || _context.GetAll() == null || Customer == null)
             {
                 return Page();
             }
 
-            _context.Customers.Add(Customer);
-            await _context.SaveChangesAsync();
+            await _context.CreateAsync(Customer);
 
             return RedirectToPage("./Index");
         }

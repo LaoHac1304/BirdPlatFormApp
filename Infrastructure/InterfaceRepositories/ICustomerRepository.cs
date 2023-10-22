@@ -9,5 +9,6 @@ namespace Infrastructure.InterfaceRepositories
 {
     public interface ICustomerRepository : IRepositoryBase<Customer>
     {
+        public Task<Customer> Authenticated(string email, string username, string avatar_url);
     }
 }
