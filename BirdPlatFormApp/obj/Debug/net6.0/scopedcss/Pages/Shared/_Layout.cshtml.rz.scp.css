@@ -46,3 +46,27 @@ button.accept-policy[b-2xhwnzm6ll] {
   white-space: nowrap;
   line-height: 60px;
 }
+
+#body-content[b-2xhwnzm6ll]{
+    height: 100vh;
+    width: 100vw
+}
+main[b-2xhwnzm6ll]{
+    width: 100%;
+}
+
+.avatar[b-2xhwnzm6ll] {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.list-group-item[b-2xhwnzm6ll]{
+    cursor: pointer;
+}
+
+.dropdown-menu[b-2xhwnzm6ll] {
+    left: -100px;
+}
+
